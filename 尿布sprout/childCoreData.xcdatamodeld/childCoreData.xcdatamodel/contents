@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="Child" representedClassName="Child" syncable="YES">
+        <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ownDefecate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Defecate" syncable="YES"/>
+    </entity>
+    <entity name="Defecate" representedClassName="Defecate" syncable="YES">
+        <attribute name="defecateDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shitColor" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="shitQuality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeInterval" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Child" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Defecate" positionX="-54" positionY="18" width="128" height="135"/>
+    </elements>
+</model>
